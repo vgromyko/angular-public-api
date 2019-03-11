@@ -27,6 +27,15 @@ create GIT repository
 To deploy the Angular application to GitHub, you need to first globally install the angular-cli-ghpages:
 npm install -g angular-cli-ghpages 
 After installing ghpages, use Angular CLI to build the project. For that, run the command as shown below:
+ --can run git config --global -e and use VS Code as editor for configuring Git.
+--Add the following to your Git configurations to use VS Code as the diff tool:
+
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+
+
 
 fill follow code
 #########################
