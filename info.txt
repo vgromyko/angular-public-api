@@ -19,8 +19,17 @@ https://cli.angular.io
 
 open  app-rooting
 
+create GIT repository
+#########################
+> git remote add master https://github.com/USERNAME/PROJECT_NAME.git 
+> git remote -v 
+
+To deploy the Angular application to GitHub, you need to first globally install the angular-cli-ghpages:
+npm install -g angular-cli-ghpages 
+After installing ghpages, use Angular CLI to build the project. For that, run the command as shown below:
+
 fill follow code
-#2#########555############2##
+#########################
 
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
